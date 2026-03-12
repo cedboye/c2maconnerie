@@ -1,0 +1,13 @@
+/**
+ * C2 Maçonnerie - Script principal
+ * Menu mobile
+ */
+document.addEventListener('DOMContentLoaded', function() {
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  if (btn && menu) {
+    btn.addEventListener('click', function() {
+      menu.classList.toggle('hidden');
+    });
+  }
+});

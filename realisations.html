@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Réalisations maçonnerie | Galerie de projets – C2 Maçonnerie Mascouche, Terrebonne, Laval</title>
+  <meta name="description" content="Galerie des réalisations C2 Maçonnerie : pose de briques, pierres, rejointoiement à Mascouche, Terrebonne, Repentigny, Laval. Projets résidentiels et commerciaux.">
+  <meta name="keywords" content="réalisations maçonnerie Mascouche, galerie maçonnerie Terrebonne, projets maçonnerie Laval Rive-Nord">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { theme: { extend: { colors: { brick: '#8B3A3A', 'brick-dark': '#6B2A2A' } } } }</script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="text-gray-900 antialiased">
+  <!-- Navigation -->
+  <nav class="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16 lg:h-20">
+        <a href="index.html" class="flex items-center gap-2">
+          <img src="photo/logo/logo.png" alt="C2 Maçonnerie" class="h-14 lg:h-16">
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="index.html" class="text-gray-700 hover:text-[#8B3A3A] font-medium">Accueil</a>
+          <a href="services.html" class="text-gray-700 hover:text-[#8B3A3A] font-medium">Services</a>
+          <a href="realisations.html" class="text-[#8B3A3A] font-semibold">Réalisations</a>
+          <a href="a-propos.html" class="text-gray-700 hover:text-[#8B3A3A] font-medium">À propos</a>
+          <a href="zones-desservies.html" class="text-gray-700 hover:text-[#8B3A3A] font-medium">Zones desservies</a>
+          <a href="contact.html" class="text-gray-700 hover:text-[#8B3A3A] font-medium">Contact</a>
+          <a href="soumission.html" class="bg-[#8B3A3A] text-white px-5 py-2.5 rounded-lg font-semibold hover:bg-[#6B2A2A] transition">Soumission</a>
+        </div>
+        <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700" aria-label="Menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 px-4 py-4 space-y-2">
+      <a href="index.html" class="block py-2 text-gray-700">Accueil</a>
+      <a href="services.html" class="block py-2 text-gray-700">Services</a>
+      <a href="realisations.html" class="block py-2 text-[#8B3A3A] font-semibold">Réalisations</a>
+      <a href="a-propos.html" class="block py-2 text-gray-700">À propos</a>
+      <a href="zones-desservies.html" class="block py-2 text-gray-700">Zones desservies</a>
+      <a href="contact.html" class="block py-2 text-gray-700">Contact</a>
+      <a href="soumission.html" class="block py-2 text-[#8B3A3A] font-semibold">Soumission</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="bg-gray-900 text-white py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">Nos réalisations</h1>
+      <p class="text-xl text-gray-300 max-w-2xl mx-auto">Projets de maçonnerie réalisés à Mascouche, Terrebonne, Repentigny, Laval et sur la Rive-Nord</p>
+    </div>
+  </section>
+
+  <!-- Galerie dynamique -->
+  <section class="py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div id="gallery" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Images chargées par JS depuis gallery-data.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-[#8B3A3A]">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl font-bold text-white mb-4">Votre projet pourrait être le prochain</h2>
+      <a href="soumission.html" class="inline-block bg-white text-[#8B3A3A] px-8 py-3 font-semibold rounded-lg hover:bg-gray-100 transition">Demander une soumission</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div>
+          <span class="text-xl font-bold text-[#8B3A3A]">C2</span>
+          <span class="text-xl font-semibold text-white"> Maçonnerie</span>
+          <p class="mt-2 text-sm">Experts en briques et pierres sur la Rive-Nord</p>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white mb-3">Navigation</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="hover:text-white">Accueil</a></li>
+            <li><a href="services.html" class="hover:text-white">Services</a></li>
+            <li><a href="realisations.html" class="hover:text-white">Réalisations</a></li>
+            <li><a href="a-propos.html" class="hover:text-white">À propos</a></li>
+            <li><a href="zones-desservies.html" class="hover:text-white">Zones desservies</a></li>
+            <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+            <li><a href="soumission.html" class="hover:text-white">Soumission</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white mb-3">Zones desservies</h4>
+          <p class="text-sm">Mascouche • Terrebonne • Repentigny • Laval • Blainville • Montréal</p>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 mt-8 pt-8 text-center text-sm">
+        <p>© 2025 C2 Maçonnerie. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/gallery-data.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

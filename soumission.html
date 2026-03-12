@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demander une soumission | Devis gratuit maçonnerie – C2 Maçonnerie Rive-Nord</title>
+  <meta name="description" content="Demandez une soumission gratuite pour vos travaux de maçonnerie à Mascouche, Terrebonne, Laval. Pose briques, pierres, rejointoiement. Réponse rapide.">
+  <meta name="keywords" content="soumission maçonnerie Mascouche, devis maçonnerie Terrebonne, estimation maçonnerie Laval">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { theme: { extend: { colors: { brick: '#8B3A3A', 'brick-dark': '#6B2A2A' } } } }</script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="text-gray-900 antialiased">
+  <!-- Navigation -->
+  <nav class="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16 lg:h-20">
+        <a href="index.html" class="flex items-center gap-2">
+          <img src="photo/logo/logo.png" alt="C2 Maçonnerie" class="h-14 lg:h-16">
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="index.html" class="text-gray-700 hover:text-[#8B3A3A] font-medium">Accueil</a>
+          <a href="services.html" class="text-gray-700 hover:text-[#8B3A3A] font-medium">Services</a>
+          <a href="realisations.html" class="text-gray-700 hover:text-[#8B3A3A] font-medium">Réalisations</a>
+          <a href="a-propos.html" class="text-gray-700 hover:text-[#8B3A3A] font-medium">À propos</a>
+          <a href="zones-desservies.html" class="text-gray-700 hover:text-[#8B3A3A] font-medium">Zones desservies</a>
+          <a href="contact.html" class="text-gray-700 hover:text-[#8B3A3A] font-medium">Contact</a>
+          <a href="soumission.html" class="bg-[#8B3A3A] text-white px-5 py-2.5 rounded-lg font-semibold">Soumission</a>
+        </div>
+        <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700" aria-label="Menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 px-4 py-4 space-y-2">
+      <a href="index.html" class="block py-2 text-gray-700">Accueil</a>
+      <a href="services.html" class="block py-2 text-gray-700">Services</a>
+      <a href="realisations.html" class="block py-2 text-gray-700">Réalisations</a>
+      <a href="a-propos.html" class="block py-2 text-gray-700">À propos</a>
+      <a href="zones-desservies.html" class="block py-2 text-gray-700">Zones desservies</a>
+      <a href="contact.html" class="block py-2 text-gray-700">Contact</a>
+      <a href="soumission.html" class="block py-2 text-[#8B3A3A] font-semibold">Soumission</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="bg-gray-900 text-white py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">Demander une soumission</h1>
+      <p class="text-xl text-gray-300 max-w-2xl mx-auto">Obtenez une estimation gratuite pour vos travaux de maçonnerie. Réponse rapide garantie.</p>
+    </div>
+  </section>
+
+  <!-- Formulaire -->
+  <section class="py-16 lg:py-24 bg-gray-50">
+    <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-white rounded-xl shadow-lg p-8">
+        <form id="form-soumission" action="#" method="POST" enctype="multipart/form-data" class="space-y-6">
+          <div>
+            <label for="nom" class="block text-sm font-medium text-gray-700 mb-2">Nom complet *</label>
+            <input type="text" id="nom" name="nom" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#8B3A3A] focus:border-[#8B3A3A] outline-none" placeholder="Votre nom">
+          </div>
+          <div class="grid sm:grid-cols-2 gap-6">
+            <div>
+              <label for="telephone" class="block text-sm font-medium text-gray-700 mb-2">Téléphone *</label>
+              <input type="tel" id="telephone" name="telephone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#8B3A3A] focus:border-[#8B3A3A] outline-none" placeholder="514-555-1234">
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Courriel *</label>
+              <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#8B3A3A] focus:border-[#8B3A3A] outline-none" placeholder="votre@email.com">
+            </div>
+          </div>
+          <div>
+            <label for="ville" class="block text-sm font-medium text-gray-700 mb-2">Ville *</label>
+            <select id="ville" name="ville" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#8B3A3A] focus:border-[#8B3A3A] outline-none">
+              <option value="">Sélectionnez votre ville</option>
+              <option value="Mascouche">Mascouche</option>
+              <option value="Terrebonne">Terrebonne</option>
+              <option value="Repentigny">Repentigny</option>
+              <option value="Laval">Laval</option>
+              <option value="Blainville">Blainville</option>
+              <option value="Montréal">Montréal</option>
+              <option value="Autre">Autre</option>
+            </select>
+          </div>
+          <div>
+            <label for="description" class="block text-sm font-medium text-gray-700 mb-2">Description du projet *</label>
+            <textarea id="description" name="description" required rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#8B3A3A] focus:border-[#8B3A3A] outline-none resize-none" placeholder="Décrivez votre projet : type de travaux (pose briques, rejointoiement, réparation, etc.), dimensions approximatives, délais souhaités..."></textarea>
+          </div>
+          <div>
+            <label for="photo" class="block text-sm font-medium text-gray-700 mb-2">Photo(s) du projet</label>
+            <input type="file" id="photo" name="photo" accept="image/*" multiple class="w-full px-4 py-3 border border-gray-300 rounded-lg file:mr-4 file:py-2 file:px-4 file:rounded file:border-0 file:bg-[#8B3A3A] file:text-white file:cursor-pointer hover:file:bg-[#6B2A2A]">
+            <p class="mt-1 text-sm text-gray-500">Vous pouvez joindre une ou plusieurs photos de votre chantier (JPG, PNG). Optionnel.</p>
+          </div>
+          <button type="submit" class="w-full bg-[#8B3A3A] text-white py-4 font-semibold rounded-lg hover:bg-[#6B2A2A] transition">
+            Envoyer ma demande de soumission
+          </button>
+        </form>
+        <p class="mt-6 text-sm text-gray-500 text-center">* Champs obligatoires. Nous répondons généralement dans les 24 à 48 heures.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Alternative: contact -->
+  <section class="py-12 bg-white">
+    <div class="max-w-2xl mx-auto px-4 text-center">
+      <p class="text-gray-600 mb-4">Préférez-vous nous appeler?</p>
+      <a href="contact.html" class="text-[#8B3A3A] font-semibold hover:underline">Voir nos coordonnées de contact →</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div>
+          <span class="text-xl font-bold text-[#8B3A3A]">C2</span>
+          <span class="text-xl font-semibold text-white"> Maçonnerie</span>
+          <p class="mt-2 text-sm">Experts en briques et pierres sur la Rive-Nord</p>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white mb-3">Navigation</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="hover:text-white">Accueil</a></li>
+            <li><a href="services.html" class="hover:text-white">Services</a></li>
+            <li><a href="realisations.html" class="hover:text-white">Réalisations</a></li>
+            <li><a href="a-propos.html" class="hover:text-white">À propos</a></li>
+            <li><a href="zones-desservies.html" class="hover:text-white">Zones desservies</a></li>
+            <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+            <li><a href="soumission.html" class="hover:text-white">Soumission</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white mb-3">Zones desservies</h4>
+          <p class="text-sm">Mascouche • Terrebonne • Repentigny • Laval • Blainville • Montréal</p>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 mt-8 pt-8 text-center text-sm">
+        <p>© 2025 C2 Maçonnerie. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Pré-remplir la ville depuis l'URL si présente
+        (function() {
+      const params = new URLSearchParams(window.location.search);
+      const ville = params.get('ville');
+      if (ville) {
+        const select = document.getElementById('ville');
+        if (select) {
+          const map = { montreal: 'Montréal', mascouche: 'Mascouche', terrebonne: 'Terrebonne', repentigny: 'Repentigny', laval: 'Laval', blainville: 'Blainville' };
+          const val = map[ville.toLowerCase()] || (ville.charAt(0).toUpperCase() + ville.slice(1));
+          const opt = select.querySelector('option[value="' + val + '"]');
+          if (opt) opt.selected = true;
+        }
+      }
+    })();
+  </script>
+</body>
+</html>
